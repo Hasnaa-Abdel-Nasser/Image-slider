@@ -8,32 +8,7 @@ container.style.cssText=` height: 100vh;
                           align-items: center;`;
 
 var active = -1;
-let images = [
-    {
-        image : 'image/1.jpeg',
-    },
-    {
-        image : 'image/2.jpeg',
-    },
-    {
-        image : 'image/3.jpeg',
-    },
-    {
-        image : 'image/4.jpeg',
-    },
-    {
-        image : 'image/5.jpeg',
-    },
-    {
-        image : 'image/6.jpeg',
-    },
-    {
-        image : 'image/7.jpeg',
-    },
-    {
-        image : 'image/8.jpeg',
-    },
-];
+let images = ['image/1.jpeg','image/2.jpeg','image/3.jpeg','image/4.jpeg','image/5.jpeg','image/6.jpeg','image/7.jpeg','image/8.jpeg'];
 
 function insertImages(){
     let htmlCode = ``;
@@ -48,7 +23,7 @@ function imagesStyle(){
     let Div;
     for(let i=0; i<images.length; i++){
         Div = document.getElementById(`img${i}`);
-        Div.style.cssText = `background: url(${images[i].image}) no-repeat center;
+        Div.style.cssText = `background: url(${images[i]}) no-repeat center;
                              background-size: cover;
                              width: 5%;
                              height: 90vh;
